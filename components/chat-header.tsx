@@ -84,7 +84,7 @@ function PureChatHeader({
           Deploy with Vercel
         </Link>
       </Button> */}
-
+{/* 
       <Button
         variant="outline"
         className="hidden md:flex py-1.5 px-2 h-fit md:h-[34px] order-4 md:ml-auto"
@@ -136,7 +136,7 @@ function PureChatHeader({
             Get Firecrawl API Key
           </span>
         </Link>
-      </Button>
+      </Button> */}
     </header>
   );
 }

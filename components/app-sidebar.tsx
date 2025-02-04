@@ -40,14 +40,14 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                 </span>
               </Link>
               <Link
-                href="https://firecrawl.dev/"
+                href="https://account.myapps.ai"
                 onClick={() => {
                   setOpenMobile(false);
                 }}
                 className="flex flex-row gap-3 items-center"
               >
                 <span className="text-sm text-muted-foreground leading-3">
-                  by Firecrawl 🔥
+                  by AI Tutor
                 </span>
               </Link>
             </div>

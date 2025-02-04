@@ -57,7 +57,7 @@ const app = new FirecrawlApp({
   apiKey: process.env.FIRECRAWL_API_KEY || '',
 });
 
-const reasoningModel = openai('o1-mini');
+const reasoningModel = openai('o3-mini');
 
 export async function POST(request: Request) {
   const {
