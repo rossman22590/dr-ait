@@ -50,7 +50,7 @@ export function SidebarUserNav({ user }: { user: User }) {
             </DropdownMenuItem> */}
             {/* <DropdownMenuSeparator /> */}
             <DropdownMenuItem asChild>
-              <button
+              {/* <button
                 type="button"
                 className="w-full cursor-pointer"
                 onClick={() => {
@@ -58,7 +58,7 @@ export function SidebarUserNav({ user }: { user: User }) {
                 }}
               >
                 Visit Firecrawl
-              </button>
+              </button> */}
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
               <button
