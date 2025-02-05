@@ -57,7 +57,7 @@ const app = new FirecrawlApp({
   apiKey: process.env.FIRECRAWL_API_KEY || '',
 });
 
-const reasoningModel = openai('o3-mini');
+const reasoningModel = openai('gpt-4o');
 
 export async function POST(request: Request) {
   const {
@@ -979,8 +979,8 @@ export async function POST(request: Request) {
 
                 const finalAnalysis = await generateText({
                   model: reasoningModel,
-                  maxTokens: 16000,
-                  prompt: `Create a comprehensive long analysis of ${topic} based on these findings:
+                  maxTokens: 16384,
+                  prompt: `Create a comprehensive super hyper detailed long analysis of ${topic} going deep and proving a large amount of information based on these findings:
                           ${researchState.findings
                             .map((f) => `[From ${f.source}]: ${f.text}`)
                             .join('\n')}
